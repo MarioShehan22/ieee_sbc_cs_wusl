@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - IEEE Computer Society - Wayamba University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #f7a800;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chapter-title {
+            color: white;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .team-container {
+            padding: 20px;
+        }
+
+        .team-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 150px;
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+            border: 2px solid #0066cc;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .member-role {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .member-name {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 5px;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            background-color: #f2f2f2;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .advisor {
+            grid-column: 1 / 3;
+            margin-right: auto;
+        }
+
+        .chair {
+            grid-column: 3 / 5;
+            margin-left: auto;
+        }
+
+        footer {
+            background-color: #f7a800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-icons {
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .copyright {
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .advisor, .chair {
+                grid-column: auto;
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="chapter-title">IEEE WS05 CS Chapter</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Members</a>
+        <a href="#">Events</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<section class="team-container">
+    <h1 class="team-title">Our Team</h1>
+
+    <div class="team-grid">
+        <!-- First row: Advisor and Chair -->
+        <div class="team-member advisor">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Prof. Y.A.A. Kumarayapa">
+            </div>
+            <div class="member-role">Chapter Advisor</div>
+            <div class="member-name">Prof. Y.A.A. Kumarayapa</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member chair">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Kavinda Hewasinghe">
+            </div>
+            <div class="member-role">Chair</div>
+            <div class="member-name">Kavinda Hewasinghe</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <!-- Second row: Secretary, Vice Chair, Assistant Secretary, Treasurer -->
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Shalani Perera">
+            </div>
+            <div class="member-role">Secretary</div>
+            <div class="member-name">Shalani Perera</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Hashen Manawarathna">
+            </div>
+            <div class="member-role">Vice Chair</div>
+            <div class="member-name">Hashen Manawarathna</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Lakshika Harshani">
+            </div>
+            <div class="member-role">Assistant Secretary</div>
+            <div class="member-name">Lakshika Harshani</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="U.S.Sandaruwan">
+            </div>
+            <div class="member-role">Treasurer</div>
+            <div class="member-name">U.S.Sandaruwan</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <!-- Third row: Webmaster, Senior Commitee members -->
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Shavin Silva">
+            </div>
+            <div class="member-role">Webmaster</div>
+            <div class="member-name">Shavin Silva</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Thanuka Madugesinghe">
+            </div>
+            <div class="member-role">Senior Commitee</div>
+            <div class="member-name">Thanuka Madugesinghe</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="W.D.C.K.Nanayakkara">
+            </div>
+            <div class="member-role">Senior Commitee</div>
+            <div class="member-name">W.D.C.K.Nanayakkara</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Ravindu Rathnayake">
+            </div>
+            <div class="member-role">Junior Commitee</div>
+            <div class="member-name">Ravindu Rathnayake</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <!-- Fourth row: Junior Committee members -->
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Jeevan Saputhri">
+            </div>
+            <div class="member-role">Junior Commitee</div>
+            <div class="member-name">Jeevan Saputhri</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Janith">
+            </div>
+            <div class="member-role">Junior Commitee</div>
+            <div class="member-name">Janith</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-photo">
+                <img src="/api/placeholder/120/120" alt="Punsara Mahawila">
+            </div>
+            <div class="member-role">Junior Commitee</div>
+            <div class="member-name">Punsara Mahawila</div>
+            <div class="social-links">
+                <a href="#" title="Email"><span>@</span></a>
+                <a href="#" title="LinkedIn"><span>in</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i> f</a>
+        <a href="#"><i class="fa fa-instagram"></i> IG</a>
+        <a href="#"><i class="fa fa-linkedin"></i> in</a>
+    </div>
+    <div class="copyright">
+        © 2025 IEEE Computer Society Student Branch Chapter Wayamba
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hover effect for team member photos
+        const memberPhotos = document.querySelectorAll('.member-photo');
+
+        memberPhotos.forEach(photo => {
+            photo.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+
+            photo.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+            });
+
+            photo.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // You could add more interactivity like:
+        // - Modal pop-ups with more team member info on click
+        // - Filtering options for different roles
+        // - Animated entrance effects for team members when scrolling
+    });
+</script>
+</body>
+</html>
