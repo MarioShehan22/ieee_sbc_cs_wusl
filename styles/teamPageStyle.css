@@ -1,0 +1,160 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.top-header {
+    background-color: #f7a800;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.chapter-title {
+    color: white;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.team-container {
+    padding: 20px;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 150px;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px solid #0066cc;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-role {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.member-name {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.social-links {
+    display: flex;
+    gap: 5px;
+}
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.advisor {
+    grid-column: 1 / 3;
+    margin-right: auto;
+}
+
+.chair {
+    grid-column: 3 / 5;
+    margin-left: auto;
+}
+
+footer {
+    background-color: #f7a800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons {
+    margin-bottom: 15px; 
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advisor, .chair {
+        grid-column: auto;
+            margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
