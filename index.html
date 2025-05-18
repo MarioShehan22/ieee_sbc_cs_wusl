@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE Computer Society - Wayamba University Of Sri Lanka</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/teamPage.js"></script>
 </head>
 <body>
 <header>
     <div class="top-header">
         <div class="container header">
             <div class="chapter-title">
-                <img src="assets/cs_logo.png" width="140" height="60" alt="logo">
+                <img src="assets/cs_logo.png" width="140" height="60" alt="logo" class="logo-container">
             </div>
             <nav>
                 <a href="index.html">Home</a>
@@ -23,162 +24,120 @@
                 <a href="#">About Us</a>
             </nav>
         </div>
-
     </div>
-    
-    <!-- <section class="hero">
-
-    </section> -->
 </header>
-    <div class="container">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" class="d-block w-100" alt="Colorful Background">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/Hero.jpg" class="d-block w-100" alt="Hero Image">
-    </div>
-    <!-- Add more carousel-item blocks as needed -->
-  </div>
-
-  <!-- Navigation buttons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-        <section class="what-is-cs mt-4">
-            <div class="logo-box">
-                <img src="./assets/CS_logo.jpg" alt="IEEE CS Logo">
-            </div>
-            <div class="cs-description">
-                <h2>What is CS?</h2>
-                <p>The IEEE Computer Society is dedicated to advancing the theory, practice, and application of computer science and engineering technology. The Society promotes an active exchange of information, ideas, and technological innovation among its members, promoting educational initiatives in various fields related to computing and information technology.</p>
-                <p>The Computer Society serves its members and the profession by promoting high professional standards among its members while supporting research, education, and industry collaboration. The Society is closely affiliated with IEEE, with a special focus on the Society's field of interest in computing and related disciplines.</p>
-            </div>
-        </section>
-
-        <section class="gallery-section">
-            <h2 class="section-title">Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 6">
-                </div>
-            </div>
-        </section>
-
-        <div class="container text-center my-5">
-        <h2 class="font-weight-light mb-4">Event</h2>
-        <div class="row mx-auto my-auto">
-            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 1</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 2</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                               <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 3</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 4</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 5</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
-                                <div class="event-info">
-                                    <h3>Event Title 6</h3>
-                                    <p>March 17, 2025</p>
-                                    <a href="#" class="view-more">VIEW MORE ›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" class="d-block w-100" alt="Colorful Background">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/Hero.jpg" class="d-block w-100" alt="Hero Image">
         </div>
     </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="container">
+    <section class="what-is-cs md-12 mt-4">
+        <div class="logo-box md-3">
+            <img src="./assets/CS_logo.jpg" alt="IEEE CS Logo">
+        </div>
+        <div class="cs-description md-9">
+            <h2>What is CS?</h2>
+            <p>The IEEE Computer Society is dedicated to advancing the theory, practice, and application of computer science and engineering technology. The Society promotes an active exchange of information, ideas, and technological innovation among its members, promoting educational initiatives in various fields related to computing and information technology.</p>
+            <p>The Computer Society serves its members and the profession by promoting high professional standards among its members while supporting research, education, and industry collaboration. The Society is closely affiliated with IEEE, with a special focus on the Society's field of interest in computing and related disciplines.</p>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event Photo 6">
+            </div>
+        </div>
+    </section>
+    <div class="container text-center my-5">
+        <h2 class="font-weight-light mb-4">Event</h2>
     </div>
-    <footer>
+    <div class="swiper my-Swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 1">
+                    <div class="event-info">
+                        <h3>Event Title 1</h3>
+                        <p>March 17, 2025</p>
+                        <a href="#" class="view-more">VIEW MORE ›</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 2">
+                    <div class="event-info">
+                        <h3>Event Title 2</h3>
+                        <p>April 10, 2025</p>
+                        <a href="#" class="view-more">VIEW MORE ›</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 2">
+                    <div class="event-info">
+                        <h3>Event Title 2</h3>
+                        <p>April 10, 2025</p>
+                        <a href="#" class="view-more">VIEW MORE ›</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 2">
+                    <div class="event-info">
+                        <h3>Event Title 2</h3>
+                        <p>April 10, 2025</p>
+                        <a href="#" class="view-more">VIEW MORE ›</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="Event 2">
+                    <div class="event-info">
+                        <h3>Event Title 2</h3>
+                        <p>April 10, 2025</p>
+                        <a href="#" class="view-more">VIEW MORE ›</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More slides... -->
+        </div>
+        <div class="mt-2">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+</div>
+    <footer class="mt-5">
         <div class="social-icons">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
@@ -188,10 +147,7 @@
             © 2025 IEEE Computer Society Student Branch Chapter Wayamba
         </div>
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
