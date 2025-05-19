@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.navbar {
+    background-color: #f7a800;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+.event-card {
+    background: #f2f2f2;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 2rem;
+}
+.event-card img {
+    border-radius: 0;
+    height: 180px;
+    object-fit: cover;
+}
+.footer {
+    background-color: #f7a800;
+    color: #fff;
+    padding: 1rem 0 0.2rem 0;
+}
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+.footer .copyright {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}

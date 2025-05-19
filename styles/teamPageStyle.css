@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,37 +7,12 @@
 body {
     background-color: #fff;
 }
-.top-header {
+.navbar {
     background-color: #f7a800;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
 }
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.chapter-title {
-    color: white;
-    font-size: 14px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
 }
 .team-container {
     padding: 20px;

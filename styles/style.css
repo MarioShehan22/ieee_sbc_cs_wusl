@@ -29,24 +29,15 @@ body {
     display: block;
     width: 100%;
 }
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    background-color: #f7a800;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
 }
 .chapter-title {
     color: white;
-    font-size: 14px;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
     font-size: 14px;
 }
 .what-is-cs {
@@ -105,24 +96,21 @@ nav a {
     text-decoration: none;
     font-size: 12px;
 }
-footer {
+.footer {
     background-color: #f7a800;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    color: #fff;
+    padding: 1rem 0 0.2rem 0;
 }
-.social-icons {
-    margin-bottom: 15px;
-}
-.social-icons a {
-    color: white;
+.footer .social-icons a {
+    color: #fff;
     margin: 0 10px;
-    font-size: 18px;
-    text-decoration: none;
+    font-size: 1.2rem;
 }
-.copyright {
-    font-size: 12px;
+.footer .copyright {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
 }
+
 @media (max-width: 768px) {
     .gallery-grid, .events-grid {
         grid-template-columns: repeat(2, 1fr);
