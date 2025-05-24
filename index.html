@@ -11,21 +11,22 @@
     <script src="js/teamPage.js"></script>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">IEEE WUSL CS Chapter</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teamPage.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eventsPage.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">IEEE WUSL CS Chapter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="teamPage.html">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="eventsPage.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            </ul>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -38,16 +39,17 @@
     <div class="swiper-pagination"></div>
 </div>
 <div class="container">
-    <section class="what-is-cs md-12 mt-4">
-        <div class="logo-box md-3">
+    <section class="what-is-cs row mt-4">
+        <div class="logo-box xl-3 sm-12">
             <img src="./assets/CS_logo.jpg" alt="IEEE CS Logo">
         </div>
-        <div class="cs-description md-9">
+        <div class="cs-description xl-9 sm-12">
             <h2>What is CS?</h2>
             <p>The IEEE Computer Society is dedicated to advancing the theory, practice, and application of computer science and engineering technology. The Society promotes an active exchange of information, ideas, and technological innovation among its members, promoting educational initiatives in various fields related to computing and information technology.</p>
             <p>The Computer Society serves its members and the profession by promoting high professional standards among its members while supporting research, education, and industry collaboration. The Society is closely affiliated with IEEE, with a special focus on the Society's field of interest in computing and related disciplines.</p>
         </div>
     </section>
+
     <section class="gallery-section">
         <h2 class="section-title">Gallery</h2>
         <div class="gallery-grid">
